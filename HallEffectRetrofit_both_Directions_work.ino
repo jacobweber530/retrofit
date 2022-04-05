@@ -87,48 +87,6 @@ if(stateTwo == LOW && counter == 0) {
   delay(1000);
 }
 
-/*
-if(stateThree == LOW && hasTwoGoneOff == true) {
-  counter++;
-  hasOneGoneOff == false;
-  hasTwoGoneOff == false;
-  hasThreeGoneOff == true;
-  hasFourGoneOff == false;
-  Serial.print("H3 Magnet read");
-  delay(500);
-}
-//if sensor three is activated and sensor three was activated last, substract resistance
-if(stateThree == LOW && hasTwoGoneOff == false && counter > 0) {
-  counter--;
-  hasOneGoneOff == false;
-  hasTwoGoneOff == false;
-  hasThreeGoneOff == true;
-  hasFourGoneOff == false;
-  Serial.print("H2 Magnet read");
-  delay(500);
-}
-
-if(stateFour == LOW && hasThreeGoneOff == true) {
-  counter++;
-  hasOneGoneOff == false;
-  hasTwoGoneOff == false;
-  hasThreeGoneOff == false;
-  hasFourGoneOff == true;
-  Serial.print("H3 Magnet read");
-  delay(500);
-}
-//if sensor four is activated and sensor three was activated last, substract resistance
-if(stateFour == LOW && hasThreeGoneOff == false && counter > 0) {
-  counter--;
-  hasOneGoneOff == false;
-  hasTwoGoneOff == false;
-  hasThreeGoneOff == true;
-  hasFourGoneOff == false;
-  Serial.print("H2 Magnet read");
-  delay(500);
-}
-*/
-
 if(counter == 0) {
   Serial.println("Resistance = 0");
 }
